@@ -1,3 +1,3 @@
 # PwJS-PiLB
 
-test commit
+Wszystkie skrypty należy uruchomić z głównej ścieżki repozytorium - .../PwJS-PiLB
