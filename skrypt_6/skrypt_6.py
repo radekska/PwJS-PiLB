@@ -4,7 +4,6 @@ from PIL import Image
 def convert_images():
     path = 'skrypt_6/images'
     abs_path = os.path.abspath(path)
-    print(abs_path)
     images_names = os.listdir(abs_path)
 
     abs_images_names = [os.path.join(abs_path, image) for image in images_names]
