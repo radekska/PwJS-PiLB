@@ -1,5 +1,11 @@
-dane = input('Podaj imię, nazwisko oraz rok urodzenia:').split(' ')
+def wypisz_dane(imie, nazwisko, data):
+    print('Imię: {imie}'.format(imie=imie))
+    print('Nazwisko: {nazwisko}'.format(nazwisko=nazwisko))
+    print('Rok urodzenia: {data}'.format(data=data))
 
-print('Imię: {imie}'.format(imie=dane[0]))
-print('Nazwisko: {nazwisko}'.format(nazwisko=dane[1]))
-print('Rok urodzenia: {data}'.format(data=dane[2]))
+
+
+if __name__ == "__main__":
+    dane = input('Podaj imię, nazwisko oraz rok urodzenia:').split(' ')
+    wypisz_dane(*dane)
+

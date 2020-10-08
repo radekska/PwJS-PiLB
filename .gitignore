@@ -8,6 +8,9 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+.DS_Store
+.vscode
+PwJS-PiLB.code-workspace
 build/
 develop-eggs/
 dist/
