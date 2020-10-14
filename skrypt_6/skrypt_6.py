@@ -1,12 +1,11 @@
 import os
 from PIL import Image
 
-def convert_images():
-    path = 'skrypt_6/images'
+def convert_images(path):
     abs_path = os.path.abspath(path)
     images_names = os.listdir(abs_path)
 
-    abs_images_names = [os.path.join(abs_path, image) for image in images_names]
+    abs_images_names = [os.path.join(abs_path, image) for image in images_names if image != '.DS_Store']
     loaded_images_list = [Image.open(image) for image in abs_images_names]
 
     for i in range(len(loaded_images_list)):
@@ -14,7 +13,10 @@ def convert_images():
         loaded_images_list[i].save(save_path)
 
 if __name__ == "__main__":
-    convert_images()
-    print("Converion successful!")
+    print('Current working directory: {cwd}'.format(cwd=os.getcwd()))
+    path = input('Provide path to images folder: ')
+
+    convert_images(path)
+    print('Conversion successful!')
 
 
