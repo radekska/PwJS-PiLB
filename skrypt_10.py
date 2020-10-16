@@ -13,8 +13,6 @@ def sort_number(numbers):
     return numbers
     
 
-
-
 def generate_random_numbers(numbers_count, start, end):
     return [random.randint(start, end) for _ in range(numbers_count)]
 
