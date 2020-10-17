@@ -11,10 +11,10 @@ class LiczbyZespolone:
 
 
     def __repr__(self):
-        return 'Re:{real}, Im:{imag:+}i'.format(real=self.real, imag=self.imaginary)
+        return 'Re:{real:.2f}, Im:{imag:+.2f}i'.format(real=self.real, imag=self.imaginary)
 
     def __str__(self):
-        return '{real}{imag:+}i'.format(real=self.real, imag=self.imaginary)
+        return '{real:.2f}{imag:+.2f}i'.format(real=self.real, imag=self.imaginary)
 
     def __add__(self, complex_object):
         if self.__check_valid(complex_object):
@@ -52,32 +52,31 @@ class LiczbyZespolone:
 
 
 
-print('### PRZYKŁADOWE LICZBY ###')
-moja_liczba = LiczbyZespolone(12, -13)
-moja_liczba_2 = LiczbyZespolone(15, 30)
-print(repr(moja_liczba))
-print(repr(moja_liczba_2))
+# print('### PRZYKŁADOWE LICZBY ###')
+# moja_liczba = LiczbyZespolone(12, -13)
+# moja_liczba_2 = LiczbyZespolone(15, 30)
+# print(repr(moja_liczba))
+# print(repr(moja_liczba_2))
 
 
-print('### DODAWANIE ###')
-print('### 1 sposób ###')
-moja_liczba_3 = moja_liczba + moja_liczba_2
-print(moja_liczba_3)
+# print('### DODAWANIE ###')
+# print('### 1 sposób ###')
+# moja_liczba_3 = moja_liczba + moja_liczba_2
+# print(moja_liczba_3)
 
-print('### 2 sposób ###')
-print(moja_liczba.__add__(moja_liczba_2))
+# print('### 2 sposób ###')
+# print(moja_liczba.__add__(moja_liczba_2))
 
-print('### ODEJMOWANIE ###')
-moja_liczba_3 = moja_liczba - moja_liczba_2
-print(moja_liczba_3)
+# print('### ODEJMOWANIE ###')
+# moja_liczba_3 = moja_liczba - moja_liczba_2
+# print(moja_liczba_3)
 
-print('### MNOŻENIE ###')
-print(moja_liczba * moja_liczba_2)
+# print('### MNOŻENIE ###')
+# print(moja_liczba * moja_liczba_2)
 
-print('### DZIELENIE ###')
-moja_liczba = LiczbyZespolone(1, 8)
-moja_liczba_2 = LiczbyZespolone(2, 3)
+# print('### DZIELENIE ###')
+# moja_liczba = LiczbyZespolone(1, 8)
+# moja_liczba_2 = LiczbyZespolone(2, 3)
 
-print(moja_liczba / moja_liczba_2)
-
+# print(moja_liczba / moja_liczba_2)
 
