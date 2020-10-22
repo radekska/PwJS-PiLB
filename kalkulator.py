@@ -2,20 +2,6 @@ from liczby_zespolone import LiczbyZespolone
 
 
 class Kalkulator:
-
-    def __menu(self):
-        print('#############################################################')
-        print('Wybierz działanie:')
-        print('1 - Dodawanie')
-        print('2 - Odejmowanie')
-        print('3 - Mnozenie')
-        print('4 - Dzielenie')
-        print('5 - Wykonaj kolejne działanie')
-        print('Q - Zakończ program', end='\n')
-        print('#############################################################')
-
-        choice = input('Wybór: ')
-        return choice
         
     def __parse_input(self, complex_number):
         splited_input = complex_number.split(' ')
@@ -30,7 +16,7 @@ class Kalkulator:
         print('Twój wynik to: {wynik}'.format(wynik=output))
 
     def __input_function(self):
-        print('#############################################################')
+        print('=============================================================')
         print('Liczby wprowadź w formacie <x +/- yi>' , end='\n')
         first_complex_number = input('Wprowadź pierwszą liczbę zespoloną: ')
         second_complex_number = input('Wprowdź drugą liczbę zespoloną: ')
@@ -40,6 +26,21 @@ class Kalkulator:
 
         return first_complex_number, second_complex_number
 
+        
+    def __menu(self):
+        print('=============================================================')
+        print('Wybierz działanie:')
+        print('1 - Dodawanie')
+        print('2 - Odejmowanie')
+        print('3 - Mnozenie')
+        print('4 - Dzielenie')
+        print('5 - Wykonaj kolejne działanie')
+        print('Q - Zakończ program', end='\n')
+        print('=============================================================')
+
+        choice = input('Wybór: ')
+        return choice
+            
 
     def command_line_interface(self):
         output = None
@@ -78,8 +79,7 @@ class Kalkulator:
             else:
                 print('Błędny wybór!')
             
-            
-            
+
 
 
 
