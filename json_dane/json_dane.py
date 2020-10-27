@@ -99,7 +99,7 @@ def validator(database, id, action='add'):
             print('Nie znaleziono obiektu.')
             return False
 
-def manage_actions():
+def run():
     database = load_database()
 
     while True:
@@ -122,4 +122,4 @@ def manage_actions():
 
 
 if __name__ == '__main__':
-    manage_actions()
+    run()
