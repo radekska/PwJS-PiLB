@@ -5,11 +5,11 @@ import matplotlib.pyplot as plot
 from queue import Queue
 from wyznacznik_macierzy import generate_matrix, calculate_determinant
 
-def generate_data(number_of_threads, matrixs_size, min_val=-10000, max_val=10000):
+def generate_data(number_of_threads, min_val=-10000, max_val=10000):
     data_to_calc = dict()
 
     for number in range(number_of_threads):
-        matrix_1 = generate_matrix(matrixs_size, min_val, max_val)
+        matrix_1 = generate_matrix(3, min_val, max_val)
 
         thread = 'THREAD_{number}'.format(number=number)
         data_to_calc[thread] = matrix_1
@@ -32,7 +32,7 @@ def get_thread_output(que_object, threads_list):
 
 def calculate_data(data_to_calc):
     """
-    This function spawns multiple threads speficied as len(data_to_calc),
+    This function spawns multiple threads. Their count is speficied as len(data_to_calc),
     then adds them to queue in order to retrive output data when finished.
     """
     threads_list = list()
@@ -51,9 +51,10 @@ def calculate_data(data_to_calc):
 
 
 if __name__ == '__main__':
-    data = generate_data(25000, 3)
+    data = generate_data(25000)
     calculated_data = calculate_data(data)
 
+    # Generating histogram 
     plot.style.use('ggplot')
     plot.hist(calculated_data, bins=15)
     plot.show()
