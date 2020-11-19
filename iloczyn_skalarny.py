@@ -1,3 +1,8 @@
+"""
+Napisz skrypt obliczający wartość iloczynu dwóch wektorów: a = [1, 2, 12, 4], b = [2, 4, 2, 8], tzw. iloczyn skalarny wektorów
+"""
+
+
 def calculate_vector_product(vector_1, vector_2):
     vector_1_len = len(vector_1)
     vector_2_len = len(vector_2)

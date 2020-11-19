@@ -1,9 +1,13 @@
+"""
+Napisz rekurencyjne przejście drzewa katalogów i wypisanie plików, które znajdują się w eksplorowanej strukturze
+"""
+
 import os
 
 def sprawdz_strukture_sciezki(path):
 	os.chdir('/')
 	for root, _ , files in os.walk(path):
-		print('Ścieżka: {path}'.format(path=root))
+		print('\nŚcieżka: {path}'.format(path=root))
 		if files:
 			for file in files:
 				print('Plik: {file}'.format(file=file))

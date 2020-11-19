@@ -1,3 +1,7 @@
+"""
+Napisz skrypt, który pyta o imię, nazwisko i rok urodzenia (powinny być podane w jednej linii)
+"""
+
 def wypisz_dane(imie, nazwisko, data):
     print('Imię: {imie}'.format(imie=imie))
     print('Nazwisko: {nazwisko}'.format(nazwisko=nazwisko))
@@ -6,6 +10,6 @@ def wypisz_dane(imie, nazwisko, data):
 
 
 if __name__ == "__main__":
-    dane = input('Podaj imię, nazwisko oraz rok urodzenia:').split(' ')
+    dane = input('Podaj imię, nazwisko oraz rok urodzenia: ').split(' ')
     wypisz_dane(*dane)
 

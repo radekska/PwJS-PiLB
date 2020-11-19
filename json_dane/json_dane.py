@@ -1,3 +1,8 @@
+"""
+Napisz program proszący użytkownika o dane zawierające kilka pól (może to być np. lista zadań z opisem i terminami wykona- nia czy baza recenzji filmów) i zapisujący podane dane do pliku w wybranym formacie (CSV/JSON). Przy każdym uruchomie- niu program powinien odczytywać i wyświetlać wprowadzone wcześniej dane, umożliwiać ich usunięcie (po jednym wpisie)
+oraz dodanie nowych rekordów.
+"""
+
 import json
 
 def print_menu():

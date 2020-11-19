@@ -1,9 +1,15 @@
+"""
+Napisz skrypt konwersji rozszerzeń plików *.jpg na *.png (up- rzednio stwórz zestaw 4 plików z rozszerzeniem *.jpg)
+"""
+
 import os
 from PIL import Image
 
-def convert_images(path):
-    abs_path = os.path.abspath(path)
+def convert_images():
+    cwd_path = os.getcwd() # Assuming that running from .../PwJS-PiLB folder
+    abs_path = os.path.join(cwd_path, 'konwersja_rozszerzenia/images')
     images_names = os.listdir(abs_path)
+
 
     abs_images_names = [os.path.join(abs_path, image) for image in images_names if image != '.DS_Store']
     loaded_images_list = [Image.open(image) for image in abs_images_names]
@@ -13,10 +19,7 @@ def convert_images(path):
         loaded_images_list[i].save(save_path)
 
 if __name__ == "__main__":
-    print('Current working directory: {cwd}'.format(cwd=os.getcwd()))
-    path = input('Provide path to images folder: ')
-
-    convert_images(path)
+    convert_images()
     print('Conversion successful!')
 
 

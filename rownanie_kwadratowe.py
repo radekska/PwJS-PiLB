@@ -1,3 +1,7 @@
+"""
+Napisz skrypt obliczający pierwiastki równania kwadratowego w postaci : y = ax2 + bx + c. Wejściem skryptu są wartości: a, b, c
+"""
+
 import math
 
 def calculate_quad_func(a, b, c):

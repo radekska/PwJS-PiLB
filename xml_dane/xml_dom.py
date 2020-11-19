@@ -1,3 +1,8 @@
+"""
+Sparsuj przygotowanego XML (parserem SAX i DOM) i go zmodyfikuj np. zmień wartość któregoś tag’a i zapisz do nowego
+pliku
+"""
+
 from xml.dom import minidom
 
 def edit_xml(new_data_dict):

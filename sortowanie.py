@@ -1,3 +1,7 @@
+"""
+Napisz skrypt sortujący liczby malejąco. Wygeneruj losowo 50 liczb - wykorzystąj standardową funkcje do losowania. Z wbu- dowanej funkcji sortującej korzystaj tylko w celu weryfikacji wyników
+"""
+
 import random
 
 def sort_number(numbers):

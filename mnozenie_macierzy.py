@@ -1,3 +1,7 @@
+"""
+Napisz skrypt realizujący mnożenie dwóch macierzy o rozmiarach 8x8
+"""
+
 import random
 
 def matrix_printer(matrix):
@@ -38,8 +42,8 @@ def calculate_matrix_product(matrix_1, matrix_2):
 
 
 if __name__ == '__main__':
-    matrix_1 = generate_matrix(3, -100, 100)
-    matrix_2 = generate_matrix(3, -100, 100)
+    matrix_1 = generate_matrix(8, -100, 100)
+    matrix_2 = generate_matrix(8, -100, 100)
 
     print("### MATRIX 1 ###")
     matrix_printer(matrix_1)

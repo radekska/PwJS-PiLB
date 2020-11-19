@@ -1,3 +1,7 @@
+"""
+Napisz skrypt wyliczający wyznacznik macierzy wygen- erowanej losowo
+"""
+
 import random
 
 def matrix_printer(matrix):
@@ -56,5 +60,5 @@ if __name__ == '__main__':
     print("### MATRIX 1 ###")
     matrix_printer(matrix)
 
-    print(calculate_determinant(matrix))
+    print(f'Determinant for given matrix is: {calculate_determinant(matrix)}')
 

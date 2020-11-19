@@ -1,3 +1,7 @@
+"""
+Napisz skrypt sumujący dwie macierze o rozmiarach 128x128. Wykorzystaj generator liczb losowych do wygenerowania macierzy.
+"""
+
 import random
 
 def matrix_printer(matrix):
@@ -28,8 +32,8 @@ def calculate_matrix_sum(matrix_1, matrix_2):
 
 
 if __name__ == '__main__':
-    matrix_1 = generate_matrix(128, 12, 100)
-    matrix_2 = generate_matrix(128, -10, 15)
+    matrix_1 = generate_matrix(4, 12, 100)
+    matrix_2 = generate_matrix(4, -10, 15)
 
     print("### MATRIX 1 ###")
     matrix_printer(matrix_1)

@@ -1,3 +1,7 @@
+"""
+Napisz skrypt zliczający ilość plików w katalogu /dev, skorzystaj ze standardowej biblioteki - os
+"""
+
 import os
 
 def sprawdz_zawartosc():

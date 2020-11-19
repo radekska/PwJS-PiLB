@@ -1,3 +1,7 @@
+"""
+Wykorzystaj powyzszą klasę do stworzenia prostego kalkulatora, parsującego i wykonującego równanie podane przez użytkownika
+"""
+
 from liczby_zespolone import LiczbyZespolone
 
 
@@ -83,6 +87,6 @@ class Kalkulator:
 
 
 
-
-moj_kalkulator = Kalkulator()
-moj_kalkulator.command_line_interface()
+if __name__ == '__main__':
+    moj_kalkulator = Kalkulator()
+    moj_kalkulator.command_line_interface()

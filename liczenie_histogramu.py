@@ -1,3 +1,7 @@
+"""
+Zaimplementuj wielowątkowe liczenie histogramu (moni- torować wykonanie htop)
+"""
+
 import random
 import threading
 import matplotlib.pyplot as plot

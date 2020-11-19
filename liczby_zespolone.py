@@ -1,3 +1,7 @@
+"""
+Zdefiniuj klasę reprezentującą liczby zespolone (wraz z funkc- jami na nich działającymi np. dodawanie, odejmowanie itd.)
+"""
+
 class LiczbyZespolone:
     def __init__(self, real, imaginary):
         self.real = real
