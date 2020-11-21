@@ -1,4 +1,4 @@
-# Rozwiązania zadań do przedmiotu "Programowanie w Językach Skryptowych - Python i Linux Bash"
+# Programowanie w Językach Skryptowych - Python i Linux Bash
 
 Wszystkie skrypty należy uruchomić z głównej ścieżki repozytorium - .../PwJS-PiLB
 
